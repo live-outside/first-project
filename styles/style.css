@@ -154,6 +154,43 @@
   color: #2f80ed;
 }
 
+/* .section__ */
+
+.section-title {
+
+}
+
+.section-subtitle {
+
+}
+
+/* .cards__ */
+.cards {
+
+}
+
+.cards__item {
+
+}
+
+.cards__image {
+
+}
+
+.cards__title {
+
+}
+
+.cards__description {
+
+}
+
+/* .techniques {
+
+} */
+
+
+
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;

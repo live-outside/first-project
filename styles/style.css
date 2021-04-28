@@ -1,0 +1,107 @@
+@font-face {
+  font-family: 'Inter-Bold';
+  src: url(../fonts/Inter-Bold.woff) format('woff'),
+  url(../fonts/Inter-Bold.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Inter Regular';
+  src: url('../fonts/Inter-Regular.woff') format('woff'),
+  url('../fonts/Inter-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Inter-SemiBold';
+  src: url('../fonts/Inter-SemiBold.woff') format('woff'),
+  url('../fonts/Inter-SemiBold.woff2') format('woff2');
+}
+
+.page {
+  min-width: 1100px;
+  /* мы ещё не умеем делать мобильную версию сайта, */
+  /* поэтому выше установлена минимальная ширина страницы */
+  max-width: 1600px;
+  /* выше установили ограничение по максимальной ширине */
+  margin: 0 auto;
+  /* выше для экранов больше 1600px отцентрировали весь контент */
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.header {
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  /* выше установили ограничения для секции */
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.header_background_gray {
+  background: #f2f2f2;
+}
+
+.header__title {
+  max-width: 730px;
+  margin-left: 64px;
+  font-size: 102px;
+  line-height: 96px;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+
+.header__subtitle {
+  max-width: 388px;
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: normal;
+  z-index: 1;
+}
+
+.header__main-illustration {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 765px;
+  height: 608px;
+  background-image: url('../images/header-image.png');
+  background-size: cover;
+  z-index: 1;
+}
+
+/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.header__square-pic {
+  position: absolute;
+  height: 568px;
+  width: 568px;
+  top: 64px;
+  right: 0;
+  background-color: #2f80ed;
+  z-index: 0;
+}
+
+.logo {
+  background-image: url('../images/logo_place_header.svg');
+  background-repeat: no-repeat;
+  height: 32px;
+  width: 183px;
+}
+
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  z-index: 2;
+}
+
+/* и элемента с модификатором вида ключ-значение */
+.table__cell_theme_dark {
+  width: 200px;
+  color: white;
+  margin-right: 0;
+  margin-top: 80px;
+}

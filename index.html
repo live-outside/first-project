@@ -6,9 +6,22 @@
   <title>Научиться учиться</title>
   <link rel="stylesheet" href="./styles/normalize.css">
   <!-- <link rel="stylesheet" href="./styles/style.css"> -->
+
+  <!-- Для ревьюера -->
+  <!-- Стилем ниже сбрасываю отступы для всех блочных элементов.
+  Это вроде не по БЭМ, но БЭМ же пропагандирует использовать меньше повторов. Почему бы не применить * {}?
+  Да и к тому же, отступами проще самому управлять.
+  Используя * я буду уверен, что точно не забыл убрать отступы на уровене блока.
+  Использую Box-sizing: border-box; Хочу управлять шириной блока самостоятельно.
+  -->
+  <link rel="stylesheet" href="./styles/fixed_browser_margin.css">
+
   <link rel="stylesheet" href="./styles/fonts.css">
 
   <link rel="stylesheet" href="./blocks/page/page.css">
+  <link rel="stylesheet" href="./blocks/logo/logo.css">
+  <link rel="stylesheet" href="./blocks/logo/_place_header/logo_place_header.css">
+  <link rel="stylesheet" href="./blocks/logo/_place_footer/logo_place_footer.css">
   <link rel="stylesheet" href="./blocks/content/__block/_position/content__block_position_centered.css">
   <link rel="stylesheet" href="./blocks/rotation/rotation.css">
   <link rel="stylesheet" href="./blocks/header/header.css">
@@ -86,10 +99,6 @@
   <link rel="stylesheet" href="./blocks/footer/__column-link/footer__column-link.css">
   <link rel="stylesheet" href="./blocks/footer/__column-links/footer__column-links.css">
   <link rel="stylesheet" href="./blocks/footer/__social-icon/footer__social-icon.css">
-
-  <link rel="stylesheet" href="./blocks/logo/logo.css">
-  <link rel="stylesheet" href="./blocks/logo/_place_header/logo_place_header.css">
-  <link rel="stylesheet" href="./blocks/logo/_place_footer/logo_place_footer.css">
 
 </head>
 <body>

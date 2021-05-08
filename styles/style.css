@@ -8,21 +8,24 @@
 }
 
 @font-face {
-  font-family: 'Inter-Bold';
+  font-family: 'Inter';
   src: url(../fonts/Inter-Bold.woff) format('woff'),
   url(../fonts/Inter-Bold.woff2) format('woff2');
+  font-weight: bold;
 }
 
 @font-face {
-  font-family: 'Inter-Regular';
+  font-family: 'Inter';
   src: url('../fonts/Inter-Regular.woff') format('woff'),
   url('../fonts/Inter-Regular.woff2') format('woff2');
+  font-weight: normal;
 }
 
 @font-face {
-  font-family: 'Inter-SemiBold';
+  font-family: 'Inter';
   src: url('../fonts/Inter-SemiBold.woff') format('woff'),
   url('../fonts/Inter-SemiBold.woff2') format('woff2');
+  font-weight: 700;
 }
 
 * {
@@ -106,7 +109,7 @@
   right: 0;
   width: 765px;
   height: 608px;
-  background-image: url('../images/header-image.png');
+  background-image: url('./images/header-image.png');
   background-size: cover;
   z-index: 1;
 }
@@ -202,7 +205,6 @@
   justify-content: center;
   position: relative;
   top: 50px;
-
 }
 
 .video__iframe {
@@ -414,6 +416,14 @@
   width: 200px;
 }
 
+/* и элемента с модификатором вида ключ-значение */
+.table__cell_theme_dark {
+  width: 200px;
+  color: white;
+  margin-right: 0;
+  margin-top: 80px;
+}
+
 .table__heading {
   font-size: 24px;
   line-height: 1.15;
@@ -529,12 +539,4 @@
 .footer__social-icon {
   width: 16px;
   height: 16px;
-}
-
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
 }
